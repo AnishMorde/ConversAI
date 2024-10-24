@@ -1,0 +1,152 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.upload-area {
+    border: 2px dashed #4CAF50;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.upload-area:hover {
+    background-color: #e0f7e0;
+}
+
+#pdf-name {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.chat-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    height: 300px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    background: #fafafa;
+    border-radius: 5px;
+}
+
+#upload-button{
+    padding: 10px 20px;
+   background-color: #007BFF;
+   color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.message {
+    margin: 10px 0;
+}
+
+.user {
+    text-align: right;
+}
+
+.bot {
+    text-align: left;
+}
+
+.message-content {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.user .message-content {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.bot .message-content {
+    background-color: #e0e0e0;
+    color: black;
+}
+
+#user-input {
+    width: calc(100% - 90px);
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#send-button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#send-button:hover {
+    background-color: #0056b3;
+}
+
+.thinking {
+    animation: typing 1.5s infinite;
+}
+
+@keyframes typing {
+    0% { opacity: 0.5; }
+    50% { opacity: 1; }
+    100% { opacity: 0.5; }
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    #user-input {
+        width: calc(100% - 70px);
+    }
+
+    #send-button {
+        padding: 8px 15px;
+    }
+
+    .chat-box {
+        height: 250px;
+    }
+}
+
+@media (max-width: 400px) {
+    #user-input {
+        width: calc(100% - 60px);
+    }
+
+    #send-button {
+        padding: 6px 12px;
+    }
+
+    .chat-box {
+        height: 200px;
+    }
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Chatbot</title>
+
+    <!-- Include PDF.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.14.305/pdf.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="chat-header">
+            <h2>ConversAI</h2>
+        </div>
+        <div class="chat-box" id="chat-box">
+            <!-- Chat messages will be appended here -->
+        </div>
+        <div class="upload-panel" id="upload-panel">
+            <div class="upload-area" id="upload-area">
+                <input type="file" id="pdf-file" accept="application/pdf" hidden>
+                <label for="pdf-file" class="upload-label">Drag & Drop your PDF here or click to upload</label>
+                <span id="pdf-name"></span>
+            </div>
+           
+        </div>
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Ask something..." />
+            <button id="send-button">Send</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
